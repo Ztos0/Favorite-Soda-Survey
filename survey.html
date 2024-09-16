@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+ 
+  </head>
+<!--End of head-->
+
+  <body>
+    <h1 id="title" >Favorite Soda Survey</h1>
+    
+    <form id="survey-form">
+      <fieldset>
+        <p id="description">Welcome to the  survey. Today we want to determine which soda is more favorable to drink among the masses. Please take moment to complete the survey.</p>
+        <label id="name-label" for="name"> 
+          Name <input required id="name" type="text" placeholder="Enter Name"></label>
+        <label id="email-label" for="email"> 
+          Email <input required id="email" type="email" placeholder="Enter Email"></label>
+        <label id="number-label" for="number"> 
+          Age<input id="number" type="number" min="13" max="125" placeholder="Enter age"></label>
+      </fieldset>
+
+      <fieldset>
+        <label>
+          Do you like drinking soda?
+         <label>
+           <input type="radio" name="yes-no" checked class="inline" value="1">Yes</label>
+         <label>
+           <input type="radio" name="yes-no" class="inline" value="2">No</label></label>   
+
+        <label>
+          Regular or Diet Soda?
+          <select id="dropdown">
+            <option>Select</option>
+            <option>Regular</option>
+            <option>Diet</option>
+          </select>  
+       </label>
+        
+        <label>
+          Choose your prefered drinks:
+        <label><input type="checkbox" value="1" class="inline">Sprite </label>
+        <label><input type="checkbox" value="2" class="inline">Coke</label>
+        <label><input type="checkbox" value="3" class="inline">Fanta</label>
+        <label><input type="checkbox" value="4" class="inline">Ginger Ale</label>
+        </label>
+    
+      <label>Additional comments<textarea placeholder="Enter additional comments"></textarea></label>
+      </fieldset>
+        <label><input id="submit" type="submit"></label>
+    </form>
+  </body>
+</html>
